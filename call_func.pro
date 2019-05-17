@@ -1,5 +1,5 @@
-pro call_func, p, args=args, logL=logL
+pro call_func, p, kargs=kargs, logL=logL, data=data
   x = p
-  ivar = args
+  ivar = kargs
   logL = -0.5 * total(ivar * x^2)
 end
